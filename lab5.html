@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kerekes Karina</title>
+<script>
+function Viitor() {
+document.getElementById("nume").innerHTML= " Ing. Kerekes Karina";
+document.getElementById("imagine").src="poza cu mine - Copy.jpg";
+document.getElementById("tabel").rows[0].cells[0].innerHTML="Idealuri";
+document.getElementById("tabel").rows[0].cells[1].innerHTML="Realizari";
+document.getElementById("tabel").rows[0].cells[2].innerHTML="Sugestii";
+document.getElementById("tabel").rows[1].cells[0].innerHTML="Sa am note cat mai bune.";
+document.getElementById("tabel").rows[1].cells[1].innerHTML="Scrierea unor licente bune.";
+document.getElementById("tabel").rows[1].cells[2].innerHTML="Prezenta la cursuri";
+document.getElementById("tabel").rows[2].cells[0].innerHTML="Finalizarea masterului";
+document.getElementById("tabel").rows[2].cells[1].innerHTML="De a lega prietenii pe viata";
+document.getElementById("tabel").rows[2].cells[2].innerHTML="Luarea in serios a invataturii";
+document.getElementById("tabel").rows[3].cells[0].innerHTML="Primirea unor burse";
+document.getElementById("tabel").rows[3].cells[1].innerHTML="De a pleca in work and travel";
+document.getElementById("tabel").rows[3].cells[2].innerHTML="Atentia la seminarii";
+
+document.body.style.backgroundColor="#FAEBD7";
+        document.getElementById("nume").style.color="#A52A2A";
+		  document.getElementById("pozaProfil").style.opacity="0.2";
+        document.getElementById("pozaProfil").style.border="2px";
+	
+}
+function arVarst()
+    {
+        var azi=new Date();
+        var varstMea;
+        var anNasc=document.getElementById("varsta").innerHTML;
+        varstMea=azi.getFullYear()-parseInt(2002);
+        document.getElementById("varsta").innerHTML=19;
+    }
+</script>
+<style>
+ body{
+      background-color: RosyBrown;
+    }
+
+h1{
+  color:#EED6C4;
+  text-align: left;
+    font-family:papyrus;}
+  
+table, ul, tr, td{
+      border: 2px solid #000000;
+      color: #2F4F4F;
+      font-family: Verdana;
+    }
+    tr {
+      color: #2F4F4F;
+      background-color: #EED6C4;
+    }
+    ul {
+      color: #2F4F4F;
+      background color: #EED6C4;
+    }
+ 
+ img{
+      border: 2px solid #EED6C4;
+      opacity: 0.9;
+	  height: 450px;
+	 width: 600px;
+    }
+
+
+p {
+  color: violet;
+  font-style: italic;
+  font-size: 36px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<h1 id="nume">Kerekes Karina</strong></h1>
+<p>E-mail:Kerekes.St.Karina@student.utcluj.ro</p>
+<img id="imagine" src="poza Karina.jpg">
+<h1>Citat:“Scopul educatiei este sa inlocuiasca o minte goala cu una deschisa.”</h1>
+<button type="button" onclick="Viitor()">Alta viata</button>
+<table id="tabel">
+  <tr>
+    <th>Discipline</th>
+    <th>Link</th>
+	<th>Anul de studiu</th>
+   
+  </tr>
+  <tr>
+    <td>Informatica Aplicata</td>
+    <td> <h3><a href="https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/06.pdf">Informatica aplicata </a></td>
+	<td> Anul 1 </td>
+  </tr>
+  <tr>
+    <td>Programarea calculatoarelor</td>
+    <td> <h3><a href="https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/04.pdf ">Programarea calculatoarelor </a></td>
+	<td> Anul 1 </td>
+  </tr>
+  <tr>
+     <td>Fizica</td>
+	<td> <h3><a href="https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/03.pdf ">Fizica </a></p> </td>
+	 <td> Anul 1 </td>
+	</tr>
+</table>
+<p onmouseover="arVarst()" id="varsta">2002</p>
+<table>
+  <tr>
+    <th>Hobby-uri</th>
+  
+  </tr>
+  <tr>
+    <th>Drumetiile</th>
+    
+  </tr>
+  <tr>
+    <th>Pianul</th>
+ </tr>
+ <tr>
+ <th> Cititul</th>
+</table>
+
+</body>
+</html>
